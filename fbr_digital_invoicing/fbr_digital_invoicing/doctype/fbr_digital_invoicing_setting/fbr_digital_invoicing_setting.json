@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2025-08-22 14:46:18.170565",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "settings_tab",
+  "credentials_section",
+  "company",
+  "base_url",
+  "invoice_validate_method",
+  "invoice_post_method",
+  "token",
+  "column_break_tixw",
+  "environment",
+  "use_dummy_data",
+  "scenario_testing_tab",
+  "scenario_id",
+  "sales_invoice",
+  "column_break_trge",
+  "test_scenario",
+  "section_break_sxgm",
+  "small_text_pdjz"
+ ],
+ "fields": [
+  {
+   "fieldname": "credentials_section",
+   "fieldtype": "Section Break",
+   "label": "Credentials"
+  },
+  {
+   "default": "https://gw.fbr.gov.pk",
+   "fieldname": "base_url",
+   "fieldtype": "Data",
+   "label": "Base Url",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tixw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Token",
+   "reqd": 1
+  },
+  {
+   "default": "/di_data/v1/di/validateinvoicedata_sb ",
+   "fieldname": "invoice_validate_method",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Validate Method",
+   "reqd": 1
+  },
+  {
+   "default": "di_data/v1/di/postinvoicedata_sb",
+   "fieldname": "invoice_post_method",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Post Method",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Sandbox",
+   "fieldname": "environment",
+   "fieldtype": "Select",
+   "label": "Environment",
+   "options": "Sandbox\nProduction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Settings"
+  },
+  {
+   "fieldname": "scenario_testing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Scenario Testing"
+  },
+  {
+   "fieldname": "scenario_id",
+   "fieldtype": "Data",
+   "label": "Scenario Id"
+  },
+  {
+   "fieldname": "column_break_trge",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Data",
+   "label": "Sales Invoice"
+  },
+  {
+   "fieldname": "test_scenario",
+   "fieldtype": "Button",
+   "label": "Test Scenario"
+  },
+  {
+   "fieldname": "section_break_sxgm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "small_text_pdjz",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "use_dummy_data",
+   "fieldtype": "Check",
+   "label": "Use Dummy Data"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-18 13:52:19.514636",
+ "modified_by": "Administrator",
+ "module": "FBR Digital Invoicing",
+ "name": "FBR Digital Invoicing Setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
